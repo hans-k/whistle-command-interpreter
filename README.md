@@ -1,6 +1,6 @@
 # Whistle command interpreter
-
 For a more complete presentation: https://hans-k.github.io/blog
+
 
 # Technical details
 The software part of this project has to two parts; one Arduino, one Java.
@@ -13,8 +13,8 @@ More on specifics is available as Javadoc.
 
 
 # How to use
-## Adding your own triggers
-Currently, two TriggerCombinations are defined in line 27 and 28 of Main.java. If you don't really know how the Triggers relate to actual sound, just experiment some with the UI enabled.
+## Adding your own whistle combinations
+Currently, two TriggerCombinations are defined in line 27 and 28 of Main.java. If you don't really know how the Triggers relate to actual sound, experiment a while with the UI enabled.
 
-## Adding your own action
+## Adding your own actions
 Custom actions can be added in the placeholder 'doAction' method in the TriggerCombination class.
