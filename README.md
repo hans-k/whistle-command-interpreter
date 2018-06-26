@@ -13,8 +13,16 @@ More on specifics is available as Javadoc.
 
 
 # How to use
-## Adding your own whistle combinations
+### Adding your own whistle combinations
 Currently, two TriggerCombinations are defined in line 27 and 28 of Main.java. If you don't really know how the Triggers relate to actual sound, experiment a while with the UI enabled.
 
-## Adding your own actions
+### Adding your own actions
 Custom actions can be added in the placeholder 'doAction' method in the TriggerCombination class.
+
+
+# Missing features
+There's still a ton of things I'd like to add to this. Some concrete points:
+- The graph should 'decay', fall back to zero, when no new sounds come in
+- The Triggers could be it a bit 'wider', e.g. make 19-21 valid where 20 is expected (it's sometimes hard to get the exact note)
+- Then again, that might wreck performance, so maybe Trigger width could be an optional setting
+- When the nth Trigger is not met, check if the (n-1)th Trigger still holds, and reset the waiting time if so.
